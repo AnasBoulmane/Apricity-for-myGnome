@@ -1,0 +1,14 @@
+{
+  "description": "Glass gnome interface", 
+  "name": "Apricity for myGnome", 
+  "shell-version": [
+    "3.12", 
+    "3.14", 
+    "3.16", 
+    "3.18", 
+    "3.20"
+  ], 
+  "url": "https://github.com/AnasBoulmane/Apricity-for-myGnome", 
+  "uuid": "ApricityGnome@anassboulmane.gmail.com", 
+  "version": 1
+}
