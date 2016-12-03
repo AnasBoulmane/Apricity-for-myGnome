@@ -1,1 +1,2 @@
-#Apricity for myGnome
+#Apricity-for-myGnome
+
