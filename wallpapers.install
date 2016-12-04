@@ -3,9 +3,9 @@
 
 cd apricity-wallpapers/
 sudo cp -var backgrounds/apricity/   /usr/share/backgrounds/
-sudo chown root:root -R /usr/share/backgrounds/apricity
-
 cd /usr/share/backgrounds/
+sudo chown root:root -R apricity
+sudo chmod -x apricity/*
 
 exec &> /usr/share/gnome-background-properties/apricity-backgrounds.xml
 
