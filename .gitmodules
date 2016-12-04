@@ -1,0 +1,6 @@
+[submodule "apricity-icons"]
+	path = apricity-icons
+	url = https://github.com/Apricity-OS/apricity-icons.git
+[submodule "apricity-wallpapers"]
+	path = apricity-wallpapers
+	url = https://github.com/Apricity-OS/apricity-wallpapers.git

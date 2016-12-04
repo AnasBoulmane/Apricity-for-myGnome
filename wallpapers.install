@@ -1,0 +1,79 @@
+#! /bin/bash
+
+
+cd apricity-wallpapers/
+sudo cp -var backgrounds/apricity/   /usr/share/backgrounds/
+cd /usr/share/backgrounds/
+sudo chown root:root -R apricity
+sudo chmod -x apricity/*
+
+exec &> /usr/share/gnome-background-properties/apricity-backgrounds.xml
+
+echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE wallpapers SYSTEM \"gnome-wp-list.dtd\">
+<wallpapers>"
+
+for image in `ls apricity/ | grep -v '.xml'`; do
+	#statements
+	var1=$(echo $image | cut -f1 -d.)
+	echo '	<wallpaper deleted="false">'
+	echo "		<name>$var1</name>"
+	echo "		<filename>/usr/share/backgrounds/apricity/$image</filename>"
+	echo '		<options>zoom</options>'
+    echo '	<pcolor>#ffffff</pcolor>'
+    echo '	<scolor>#000000</scolor>'
+	echo '	</wallpaper>'
+done
+
+echo "</wallpapers>"
+
+ls /usr/share/backgrounds/ubuntu-gnome 1>/dev/null 
+if [ $? -eq 0 ] ; then
+	#statements
+	cd /usr/share/backgrounds/
+	file=`ls ubuntu-gnome | grep '.xml'`
+	exec &> /usr/share/backgrounds/ubuntu-gnome/$file
+
+	echo "<background>
+	  <starttime>
+	    <year>2009</year>
+	    <month>08</month>
+	    <day>04</day>
+	    <hour>00</hour>
+	    <minute>00</minute>
+	    <second>00</second>
+	  </starttime>
+	<!-- This animation will start at midnight. -->"
+
+	i=0
+	firstIm=""
+	for image in `ls apricity/ | grep -v '.xml'`; do
+		#statements
+		if [[ $i -eq 0 ]]; then
+			#statements
+			echo "  <static>
+	    <duration>1295.0</duration>
+	    <file>/usr/share/backgrounds/apricity/$image</file>
+	  </static>
+	  <transition>
+	    <duration>5.0</duration>
+	    <from>/usr/share/backgrounds/apricity/$image</from>"
+		    i=1
+		    firstIm=$image
+		else
+			echo "    <to>/usr/share/backgrounds/apricity/$image</to>"
+			echo "  </transition>"
+			echo "  <static>"
+			echo "    <duration>1295.0</duration>"
+			echo "    <file>/usr/share/backgrounds/apricity/$image</file>"
+			echo "  </static>"
+			echo "  <transition>"
+			echo "    <duration>5.0</duration>"
+			echo "    <from>/usr/share/backgrounds/apricity/$image</from>"
+		fi
+	done
+	echo "    <to>/usr/share/backgrounds/apricity/$firstIm</to>
+	  </transition>
+	</background>
+	"
+fi
