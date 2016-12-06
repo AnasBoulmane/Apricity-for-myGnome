@@ -1,5 +1,5 @@
 #! /bin/bash
 
-sudo cp -var apricity-icons/Apricity\ Icons /usr/share/icons/
+sudo cp -var apricity-icons/Apricity\ Icons /usr/share/icons/ 1>/dev/null 
 sudo ./wallpapers.install
-cp -var ApricityGnome@anassboulmane.gmail.com ~/.local/share/gnome-shell/extensions
+cp -var ApricityGnome@anassboulmane.gmail.com ~/.local/share/gnome-shell/extensions 1>/dev/null 
