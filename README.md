@@ -11,12 +11,12 @@ The first step is to install Arc Theme.
 Secondly install dash to dock and select the "`Shrink the dash` or `Reduce margins`" option.
 ![A screenshot of the dash to dock params](https://github.com/AnasBoulmane/Apricity-for-myGnome/blob/dev/images/dash-to-dock.png)
 #### Get the source and install
-Download [full](https://mega.nz/#!rAQBgCJb!bB3M4GdPdLbfkYULj_JhG1kP-KIEt48Xf_HiFJpdNcU) version or [lite](https://mega.nz/#!vdAGVSgD!1rF9rxzIuyz6C5Biy9p3aUp5YNL_AK2QIKsLWh9Q8XU) (without wallpaper)
+Download [full](https://mega.nz/#!rAQBgCJb!bB3M4GdPdLbfkYULj_JhG1kP-KIEt48Xf_HiFJpdNcU) version or [lite](https://mega.nz/#!vdAGVSgD!1rF9rxzIuyz6C5Biy9p3aUp5YNL_AK2QIKsLWh9Q8XU) (without wallpaper) & install it with
 
     unzip Apricity-for-myGnome\ Lite.zip -d Apricity
     sudo ./Apricity/apricity.install
 
-Clone the git repository & install it with
+Or clone the git repository & install it with
 
     git clone --recursive https://github.com/AnasBoulmane/Apricity-for-myGnome.git && cd Apricity-for-myGnome
     sudo ./apricity.install
