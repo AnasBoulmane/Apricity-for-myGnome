@@ -1,17 +1,17 @@
-#Apricity-for-myGnome
+# Apricity-for-myGnome
 [Apricity os](https://apricityos.com) theme with transparent elements for Gnome desktop environments. 
 
 ![A screenshot of the Apricity theme](https://github.com/AnasBoulmane/Apricity-for-myGnome/blob/dev/images/Capture%204.png)
 
 ## Installation
-#### [Arc Theme](https://github.com/horst3180/arc-theme)
+#### [Arc Theme](https://github.com/horst3b.rabat.sqli.com/users/sign_in180/arc-theme)
 The first step is to install Arc Theme.
 ![A screenshot of the Arc theme](http://i.imgur.com/Ph5ObOa.png)
 #### [dash to dock Extension](https://extensions.gnome.org/extension/307/dash-to-dock/)
 Secondly install dash to dock and select the "`Shrink the dash` or `Reduce margins`" option.
 ![A screenshot of the dash to dock params](https://github.com/AnasBoulmane/Apricity-for-myGnome/blob/dev/images/dash-to-dock.png)
 #### Get the source and install
-Download [full](https://mega.nz/#!rAQBgCJb!bB3M4GdPdLbfkYULj_JhG1kP-KIEt48Xf_HiFJpdNcU) version or [lite](https://mega.nz/#!vdAGVSgD!1rF9rxzIuyz6C5Biy9p3aUp5YNL_AK2QIKsLWh9Q8XU) (without wallpaper) & install it with
+Download [full](https://mega.nz/#!rAQBgb.rabat.sqli.com/users/sign_inCJb!bB3M4GdPdLbfkYULj_JhG1kP-KIEt48Xf_HiFJpdNcU) version or [lite](https://mega.nz/#!vdAGVSgD!1rF9rxzIuyz6C5Biy9p3aUp5YNL_AK2QIKsLWh9Q8XU) (without wallpaper) & install it with
 
     unzip Apricity-for-myGnome\ Lite.zip -d Apricity
     sudo ./Apricity/apricity.install
